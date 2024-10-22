@@ -11,7 +11,7 @@ public class PersonalService {
         if (nomPersonal.length() > 50) {
             throw new RuntimeException("Fallo en la verificación de seguridad, posible intrusión detectada.");
         }
-        return "Persona llamada: " + nomPersonal + " podria ser un intruso, verifique su identidad.";
+        return "Persona llamada: " + nomPersonal + " podria ser un intruso, verifique su identidad o informe a un superior sobre la persona.";
     }
 
     public String fallbackErrorPersonal(String nomPersonal, Throwable t) {
