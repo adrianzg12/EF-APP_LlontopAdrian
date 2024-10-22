@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "0f4b41b9-578f-48c4-80a8-09dceb795adb",
+		"name": "EvaluacionFinalDAWII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38291930"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9091/personal/verificar/AdrianLlontop",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "client",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "codigo",
+							"value": "adrian",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9091/personal/verificar/AdrianLlontop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"personal",
+						"verificar",
+						"AdrianLlontop"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
